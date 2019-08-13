@@ -11,6 +11,10 @@ public class Game : MonoBehaviour {
     void Start() {
         fileLogger = new FileLogger();
         logger.Log(TAG, "Start()");
+        CreateWorld();
+    }
+
+    private void CreateWorld() {
         world = new World();
     }
 
